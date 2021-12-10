@@ -2,7 +2,7 @@ var dotcolor1 = "red",
   dotcolor2 = "yellow",
   dotcolormain = "black",
   dotcolorwin1 = "#400",
-  dotcolorwin2 = "#404",
+  dotcolorwin2 = "#770",
   backgroundcolor = "black",
   boardcolor = "black",
   colorname1 = "Red",
@@ -43,7 +43,6 @@ $("#resultMOD").css({
   'user-select': 'none'
 });
 $('body').on('click', '.dotMOD', function() {
-  console.log('a');
   if (!this.id.includes("MOD")) return;
   var ID = this.id.replace("MOD", "");
   if (!playing) return;
