@@ -1,12 +1,12 @@
-var dotcolor1 = "green",
-  dotcolor2 = "blue",
+var dotcolor1 = "red",
+  dotcolor2 = "yellow",
   dotcolormain = "black",
   dotcolorwin1 = "#040",
   dotcolorwin2 = "#004",
   backgroundcolor = "black",
   boardcolor = "black",
-  colorname1 = "Green",
-  colorname2 = "Blue";
+  colorname1 = "Red",
+  colorname2 = "Yellow";
 document.getElementById('result').id = "resultMOD";
 document.getElementById('reset').id = "resetMOD";
 for (var i = 1; i <= 42; i++) {
