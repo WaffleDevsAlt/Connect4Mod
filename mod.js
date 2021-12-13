@@ -94,7 +94,7 @@ function winLogic() {
       $('#' + winsets[i][1] + 'MOD').css("background-color", dotcolorwin1);
       $('#' + winsets[i][2] + 'MOD').css("background-color", dotcolorwin1);
       $('#' + winsets[i][3] + 'MOD').css("background-color", dotcolorwin1);
-      $("html").addClass('redwon');
+      winanim("red")
     } else if (a == "2" && b == "2" && c == "2" && d == "2") {
       playing = false;
       $("#resultMOD").html(colorname2 + " Won!");
@@ -102,7 +102,12 @@ function winLogic() {
       $('#' + winsets[i][1] + 'MOD').css("background-color", dotcolorwin2);
       $('#' + winsets[i][2] + 'MOD').css("background-color", dotcolorwin2);
       $('#' + winsets[i][3] + 'MOD').css("background-color", dotcolorwin2);
-      $("html").addClass('bluewon');
+      winanim("blue")
     }
+  }
+}
+function winanim(color){
+  while(playing == false){
+    
   }
 }
