@@ -7,6 +7,7 @@ const newElem = {
   input3: $("<input style='width: 80%;' name='dotcolorwin1'id='dotcolorwin1' type='text'></input><br>"),
   label4: $("<label for'dotcolorwin2' style='margin-right: 5px;'>DotColorWin 2:</label>"),
   input4: $("<input style='width: 80%;' name='dotcolorwin2'id='dotcolorwin2' type='text'></input><br>"),
+  
   label5: $("<label for'backcolorwin1' style='margin-right: 5px;'>BackColorWin 1:</label>"),
   input5: $("<input style='width: 80%;' name='backtcolorwin1'id='backcolorwin1' type='text'></input><br>"),
   label6: $("<label for'backcolorwin2' style='margin-right: 5px;'>BackColorWin 2:</label>"),
@@ -21,6 +22,7 @@ const newElem = {
   input10: $("<input style='width: 80%;' name='colorname1'id='colorname1' type='text'></input><br>"),
   label11: $("<label for'colorname2' style='margin-right: 5px;'>ColorName 2:</label>"),
   input11: $("<input style='width: 80%;' name='colorname2'id='colorname2' type='text'></input><br>"),
+
   button1: $("<input type='submit' value='Update Values' id='submit'>"),
 }
 var dotcolor1 = "red",
@@ -56,6 +58,8 @@ $('#submit').click(function() {
   if ($('#boardcolor').val()) boardcolor = $('#boardcolor').val()
   if ($('#colorname1').val()) colorname1 = $('#colorname1').val()
   if ($('#colorname2').val()) colorname2 = $('#colorname2').val()
+  if ($('#backcolorwin1').val()) backcolorwin1 = $('#backcolorwin1').val()
+  if ($('#backcolorwin2').val()) backcolorwin2 = $('#backcolorwin2').val()
   $("body").css('background-color', boardcolor)
   $("html").css('background-color', backgroundcolor)
   $(":root").attr("style", "--win_anim_color1: " + backgroundcolor)
